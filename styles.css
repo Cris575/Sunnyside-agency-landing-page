@@ -27,6 +27,8 @@ body {
   margin: 0;
   color: var(--White);
   font-family: "Barlow", sans-serif;
+  /* max-width: 80%;
+  margin: 0 auto; */
 }
 
 /* Estilos del Header */
@@ -35,6 +37,7 @@ header {
   background-image: url(images/desktop/image-header.jpg);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
+  background-position: center;
   padding: 2.5rem;
 }
 
@@ -102,11 +105,20 @@ article div:nth-child(3) {
 article div:nth-child(4) {
   grid-area: e;
   background-image: url(images/desktop/image-graphic-design.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 40px;
 }
 article div:nth-child(5) {
   background-image: url(images/desktop/image-photography.jpg);
-
   grid-area: f;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 40px;
 }
 .article__conatiner {
   height: 70vh;
@@ -114,5 +126,37 @@ article div:nth-child(5) {
   background-repeat: no-repeat;
   color: black;
   background-color: var(--White);
-  padding: 10%;
+  padding: 15%;
+}
+.article_title {
+  font-size: 5em;
+  font-family: "Fraunces";
+  font-weight: bolder;
+}
+
+.article__conatiner > p,
+.article--width > p {
+  font-size: 2em;
+  line-height: 3rem;
+}
+
+.article__conatiner > span {
+  font-family: "Fraunces";
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.article--width {
+  text-align: center;
+  width: 90%;
+}
+.article--color-blue {
+  color: var(--Dark-blue);
+}
+article--color-green {
+  color: var(--Dark-desaturated-cyan);
+}
+.article--size {
+  font-size: 30px;
+  font-family: "Fraunces";
 }
