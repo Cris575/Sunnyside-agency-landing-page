@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&display=swap");
+:root {
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --Dark-blue: hsl(198, 62%, 26%);
+  --Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: var(--White);
+  font-family: "Barlow", sans-serif;
+}
+
+/* Estilos del Header */
+header {
+  height: 100vh;
+  background-image: url(images/desktop/image-header.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  padding: 2.5rem;
+}
+
+.header__conatiner,
+.nav__conatiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__link {
+  margin-left: 4rem;
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.nav--select {
+  text-align: center;
+  background-color: var(--White);
+  color: black;
+  width: 9rem;
+  height: 3.5rem;
+  padding: 10px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.header--center {
+  text-align: center;
+  margin-top: 5rem;
+}
+.header__title {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 3em;
+  font-weight: 900;
+  font-family: "Fraunces";
+}
+.header__arrow {
+  margin-top: 6.5rem;
+}
