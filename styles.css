@@ -69,11 +69,50 @@ header {
 }
 .header__title {
   text-transform: uppercase;
-  letter-spacing: 0.5em;
-  font-size: 3em;
+  letter-spacing: 0.2em;
+  font-size: 5em;
   font-weight: 900;
   font-family: "Fraunces";
 }
 .header__arrow {
   margin-top: 6.5rem;
+}
+
+/* seccion de frutas */
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "a b" "c d" "e f";
+}
+article div:nth-child(1) {
+  grid-area: a;
+}
+
+article div:nth-child(2) {
+  grid-area: b;
+  background-image: url(images/desktop/image-transform.jpg);
+}
+
+article div:nth-child(3) {
+  grid-area: c;
+  background-image: url(images/desktop/image-stand-out.jpg);
+}
+article div:nth-child(4) {
+  grid-area: e;
+  background-image: url(images/desktop/image-graphic-design.jpg);
+}
+article div:nth-child(5) {
+  background-image: url(images/desktop/image-photography.jpg);
+
+  grid-area: f;
+}
+.article__conatiner {
+  height: 70vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: black;
+  background-color: var(--White);
+  padding: 10%;
 }
