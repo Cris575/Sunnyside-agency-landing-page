@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,900&display=swap");
 :root {
   --Soft-red: hsl(7, 99%, 70%);
   --Yellow: hsl(51, 100%, 49%);
@@ -78,7 +78,7 @@ header {
   font-family: "Fraunces";
 }
 .header__arrow {
-  margin-top: 6.5rem;
+  margin-top: 3rem;
 }
 
 /* seccion de frutas */
@@ -126,7 +126,7 @@ article div:nth-child(5) {
   background-repeat: no-repeat;
   color: black;
   background-color: var(--White);
-  padding: 20%;
+  padding: 17.5%;
 }
 .article_title {
   font-size: 3.9em;
@@ -136,7 +136,6 @@ article div:nth-child(5) {
 
 .article__conatiner > p,
 .article--width > p {
-  font-size: 1.6em;
   line-height: 3rem;
   color: var(--Dark-desaturated-cyan);
 }
@@ -159,7 +158,7 @@ article div:nth-child(5) {
   width: 120px;
   position: absolute;
   bottom: -1px;
-  left: -5px;
+  left: -6.5px;
   border-radius: 20px;
   z-index: -1;
 }
@@ -174,31 +173,49 @@ article div:nth-child(5) {
 .article--color-blue {
   color: var(--Dark-blue);
 }
-article--color-green {
+.article--color-green {
   color: var(--Dark-desaturated-cyan);
 }
 .article--size {
   font-size: 30px;
   font-family: "Fraunces";
 }
-
+.article__text {
+  text-align: center;
+}
+.article--fontSize {
+  font-size: 1.8em;
+}
+.article--padding {
+  padding-left: 16%;
+}
 /* diseño de cards */
 
 .cards {
-  padding: 200px 30px;
+  padding: 20rem 10rem 15rem 10rem;
   position: relative;
+  color: var(--Dark-grayish-blue);
 }
 .cards_container {
-  color: black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.cards__person {
-  width: 500px;
+.cards_title {
   text-align: center;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family: "Fraunces";
   font-size: 2em;
+}
+.cards__person {
+  color: var(--Very-dark-desaturated-blue);
+  width: auto;
+  text-align: center;
+  font-size: 1.7em;
   padding: 20px;
+  font-family: "Barlow", sans-serif;
+  line-height: 3rem;
 }
 .cards__person > img {
   border-radius: 50%;
@@ -210,13 +227,56 @@ article--color-green {
   left: 0;
   right: 0;
 }
+.cards__description {
+  color: var(--Very-dark-desaturated-blue);
+  margin: 6rem 0 6rem 0;
+}
+.cards--bold {
+  font-family: "Fraunces";
+  font-weight: bolder;
+  line-height: 0;
+}
+.cards__name {
+  color: var(--Grayish-blue);
+}
+
+/* galeria */
 
 .galerry {
   display: flex;
   height: 50vh;
-  flex-wrap: wrap;
 }
 .galerry img {
   width: 0;
   flex-grow: 1;
+}
+
+/* footer */
+
+.attribution {
+  background-color: var(--Dark-moderate-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+}
+
+.attribution__img,
+.attribution__social {
+  margin-top: 7rem;
+}
+
+.attribution__options {
+  margin-top: 3rem;
+}
+.attribution__social > img,
+.attribution__options > a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.attribution__options > a {
+  text-decoration: none;
+  color: var(--Dark-desaturated-cyan);
 }
